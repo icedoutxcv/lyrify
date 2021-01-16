@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>All</key>
+	<integer>0</integer>
+	<key>Pop</key>
+	<integer>132</integer>
+	<key>Rap/Hip Hop</key>
+	<integer>116</integer>
+	<key>Rock</key>
+	<string>152</string>
+	<key>Dance</key>
+	<string>113</string>
+	<key>R&amp;B</key>
+	<string>165</string>
+	<key>Alternative</key>
+	<string>85</string>
+	<key>Electro</key>
+	<string>106</string>
+	<key>Folk</key>
+	<string>466</string>
+	<key>Reggae</key>
+	<string>144</string>
+	<key>Jazz</key>
+	<string>129</string>
+	<key>Classic</key>
+	<string>98</string>
+	<key>Films/Games</key>
+	<string>173</string>
+	<key>Metal</key>
+	<string>464</string>
+	<key>Soul &amp; Funk</key>
+	<string>169</string>
+	<key>Blues</key>
+	<string>153</string>
+	<key>Indian Music</key>
+	<string>81</string>
+	<key>Kids</key>
+	<string>95</string>
+	<key>Latino</key>
+	<string>197</string>
+	<key>African</key>
+	<string>2</string>
+	<key>Asian</key>
+	<string>16</string>
+	<key>Brazilian</key>
+	<string>75</string>
+</dict>
+</plist>

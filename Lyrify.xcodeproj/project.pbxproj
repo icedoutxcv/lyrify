@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0367DFE625AE2F64002E63F3 /* DiscoverViewControllerDatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367DFE525AE2F64002E63F3 /* DiscoverViewControllerDatasourceDelegate.swift */; };
+		0367DFE925AE3681002E63F3 /* SearchViewControllerDatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367DFE825AE3681002E63F3 /* SearchViewControllerDatasourceDelegate.swift */; };
+		C16761E78324B9BD70BA9F07 /* Pods_Lyrify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5709029BD2C4F6E1058E0AA2 /* Pods_Lyrify.framework */; };
+		CD089A7F2393EAA800D94A73 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089A7E2393EAA800D94A73 /* AlbumViewController.swift */; };
+		CD089A812393F0D700D94A73 /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089A802393F0D700D94A73 /* LyricsViewController.swift */; };
+		CD089A832393FE5300D94A73 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089A822393FE5300D94A73 /* ArtistViewController.swift */; };
+		CD302D0C2397147600F46D0F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD302D0B2397147600F46D0F /* Utilities.swift */; };
+		CD302D1023984BD400F46D0F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD302D0F23984BD400F46D0F /* DataManager.swift */; };
+		CD335C6923B8FABD00734637 /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD335C6823B8FABD00734637 /* LikedViewController.swift */; };
+		CD34433823A298740007CAA9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34433723A298740007CAA9 /* DiscoverViewController.swift */; };
+		CD58AA1C23902EB200525951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58AA1B23902EB200525951 /* AppDelegate.swift */; };
+		CD58AA1E23902EB200525951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58AA1D23902EB200525951 /* SceneDelegate.swift */; };
+		CD58AA2023902EB200525951 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58AA1F23902EB200525951 /* SearchViewController.swift */; };
+		CD58AA2323902EB200525951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD58AA2123902EB200525951 /* Main.storyboard */; };
+		CD58AA2523902EB400525951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD58AA2423902EB400525951 /* Assets.xcassets */; };
+		CD58AA302390395900525951 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58AA2F2390395900525951 /* SongTableViewCell.swift */; };
+		CD6BFB752397018F00A6AED5 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BFB732397018F00A6AED5 /* AlbumCollectionViewCell.swift */; };
+		CD6BFB762397018F00A6AED5 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6BFB742397018F00A6AED5 /* AlbumCollectionViewCell.xib */; };
+		CD978C1124C200F40034128D /* Genres.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD978C1024C200F40034128D /* Genres.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0367DFE525AE2F64002E63F3 /* DiscoverViewControllerDatasourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewControllerDatasourceDelegate.swift; sourceTree = "<group>"; };
+		0367DFE825AE3681002E63F3 /* SearchViewControllerDatasourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerDatasourceDelegate.swift; sourceTree = "<group>"; };
+		0F222A265A8344017D50F42E /* Pods-Lyrify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyrify.release.xcconfig"; path = "Target Support Files/Pods-Lyrify/Pods-Lyrify.release.xcconfig"; sourceTree = "<group>"; };
+		5709029BD2C4F6E1058E0AA2 /* Pods_Lyrify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lyrify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD089A7E2393EAA800D94A73 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		CD089A802393F0D700D94A73 /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
+		CD089A822393FE5300D94A73 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		CD302D0B2397147600F46D0F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CD302D0F23984BD400F46D0F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CD335C6823B8FABD00734637 /* LikedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
+		CD34433723A298740007CAA9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		CD58AA1823902EB200525951 /* Lyrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD58AA1B23902EB200525951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD58AA1D23902EB200525951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD58AA1F23902EB200525951 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CD58AA2223902EB200525951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD58AA2423902EB400525951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD58AA2923902EB400525951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD58AA2F2390395900525951 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		CD6BFB732397018F00A6AED5 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD6BFB742397018F00A6AED5 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD978C0D24C1FE4C0034128D /* Lyrify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lyrify.entitlements; sourceTree = "<group>"; };
+		CD978C1024C200F40034128D /* Genres.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Genres.plist; sourceTree = "<group>"; };
+		E65343DD5C2DF93F7D1A865D /* Pods-Lyrify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyrify.debug.xcconfig"; path = "Target Support Files/Pods-Lyrify/Pods-Lyrify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD58AA1523902EB200525951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16761E78324B9BD70BA9F07 /* Pods_Lyrify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A85063303ECFF86C6D7D5E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5709029BD2C4F6E1058E0AA2 /* Pods_Lyrify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D9C3F4EB980DC8A42911462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E65343DD5C2DF93F7D1A865D /* Pods-Lyrify.debug.xcconfig */,
+				0F222A265A8344017D50F42E /* Pods-Lyrify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD58AA0F23902EB200525951 = {
+			isa = PBXGroup;
+			children = (
+				CD58AA1A23902EB200525951 /* Lyrify */,
+				CD58AA1923902EB200525951 /* Products */,
+				8D9C3F4EB980DC8A42911462 /* Pods */,
+				5A85063303ECFF86C6D7D5E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD58AA1923902EB200525951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD58AA1823902EB200525951 /* Lyrify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD58AA1A23902EB200525951 /* Lyrify */ = {
+			isa = PBXGroup;
+			children = (
+				CD978C0D24C1FE4C0034128D /* Lyrify.entitlements */,
+				CD88679423B942C200711863 /* Model */,
+				CD88679523B942E000711863 /* ViewControllers */,
+				CD88679623B942F600711863 /* Views */,
+				CD88679723B9430600711863 /* Others */,
+				CD978C1224C202100034128D /* Data */,
+				CD58AA1D23902EB200525951 /* SceneDelegate.swift */,
+				CD58AA1B23902EB200525951 /* AppDelegate.swift */,
+				CD58AA2123902EB200525951 /* Main.storyboard */,
+				CD58AA2423902EB400525951 /* Assets.xcassets */,
+				CD58AA2923902EB400525951 /* Info.plist */,
+			);
+			path = Lyrify;
+			sourceTree = "<group>";
+		};
+		CD88679423B942C200711863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD302D0F23984BD400F46D0F /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD88679523B942E000711863 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD34433723A298740007CAA9 /* DiscoverViewController.swift */,
+				0367DFE525AE2F64002E63F3 /* DiscoverViewControllerDatasourceDelegate.swift */,
+				CD58AA1F23902EB200525951 /* SearchViewController.swift */,
+				0367DFE825AE3681002E63F3 /* SearchViewControllerDatasourceDelegate.swift */,
+				CD089A802393F0D700D94A73 /* LyricsViewController.swift */,
+				CD089A822393FE5300D94A73 /* ArtistViewController.swift */,
+				CD089A7E2393EAA800D94A73 /* AlbumViewController.swift */,
+				CD335C6823B8FABD00734637 /* LikedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD88679623B942F600711863 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD58AA2F2390395900525951 /* SongTableViewCell.swift */,
+				CD6BFB732397018F00A6AED5 /* AlbumCollectionViewCell.swift */,
+				CD6BFB742397018F00A6AED5 /* AlbumCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD88679723B9430600711863 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CD302D0B2397147600F46D0F /* Utilities.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CD978C1224C202100034128D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CD978C1024C200F40034128D /* Genres.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD58AA1723902EB200525951 /* Lyrify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD58AA2C23902EB400525951 /* Build configuration list for PBXNativeTarget "Lyrify" */;
+			buildPhases = (
+				8D5DBEA1A1F57CB686FC5AE6 /* [CP] Check Pods Manifest.lock */,
+				CD58AA1423902EB200525951 /* Sources */,
+				CD58AA1523902EB200525951 /* Frameworks */,
+				CD58AA1623902EB200525951 /* Resources */,
+				F03D8D0471A04C3A4FDF48E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lyrify;
+			productName = Lyrify;
+			productReference = CD58AA1823902EB200525951 /* Lyrify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD58AA1023902EB200525951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Kamil Bloch";
+				TargetAttributes = {
+					CD58AA1723902EB200525951 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CD58AA1323902EB200525951 /* Build configuration list for PBXProject "Lyrify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD58AA0F23902EB200525951;
+			productRefGroup = CD58AA1923902EB200525951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD58AA1723902EB200525951 /* Lyrify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD58AA1623902EB200525951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6BFB762397018F00A6AED5 /* AlbumCollectionViewCell.xib in Resources */,
+				CD58AA2523902EB400525951 /* Assets.xcassets in Resources */,
+				CD978C1124C200F40034128D /* Genres.plist in Resources */,
+				CD58AA2323902EB200525951 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D5DBEA1A1F57CB686FC5AE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lyrify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03D8D0471A04C3A4FDF48E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lyrify/Pods-Lyrify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lyrify/Pods-Lyrify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lyrify/Pods-Lyrify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD58AA1423902EB200525951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0367DFE625AE2F64002E63F3 /* DiscoverViewControllerDatasourceDelegate.swift in Sources */,
+				CD6BFB752397018F00A6AED5 /* AlbumCollectionViewCell.swift in Sources */,
+				0367DFE925AE3681002E63F3 /* SearchViewControllerDatasourceDelegate.swift in Sources */,
+				CD089A812393F0D700D94A73 /* LyricsViewController.swift in Sources */,
+				CD58AA302390395900525951 /* SongTableViewCell.swift in Sources */,
+				CD089A7F2393EAA800D94A73 /* AlbumViewController.swift in Sources */,
+				CD335C6923B8FABD00734637 /* LikedViewController.swift in Sources */,
+				CD089A832393FE5300D94A73 /* ArtistViewController.swift in Sources */,
+				CD58AA2023902EB200525951 /* SearchViewController.swift in Sources */,
+				CD302D0C2397147600F46D0F /* Utilities.swift in Sources */,
+				CD58AA1C23902EB200525951 /* AppDelegate.swift in Sources */,
+				CD34433823A298740007CAA9 /* DiscoverViewController.swift in Sources */,
+				CD302D1023984BD400F46D0F /* DataManager.swift in Sources */,
+				CD58AA1E23902EB200525951 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD58AA2123902EB200525951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD58AA2223902EB200525951 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD58AA2A23902EB400525951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD58AA2B23902EB400525951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD58AA2D23902EB400525951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E65343DD5C2DF93F7D1A865D /* Pods-Lyrify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lyrify/Lyrify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU3T85F468;
+				INFOPLIST_FILE = Lyrify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcv.Lyrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD58AA2E23902EB400525951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F222A265A8344017D50F42E /* Pods-Lyrify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lyrify/Lyrify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU3T85F468;
+				INFOPLIST_FILE = Lyrify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcv.Lyrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD58AA1323902EB200525951 /* Build configuration list for PBXProject "Lyrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58AA2A23902EB400525951 /* Debug */,
+				CD58AA2B23902EB400525951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD58AA2C23902EB400525951 /* Build configuration list for PBXNativeTarget "Lyrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58AA2D23902EB400525951 /* Debug */,
+				CD58AA2E23902EB400525951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD58AA1023902EB200525951 /* Project object */;
+}
