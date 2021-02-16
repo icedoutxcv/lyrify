@@ -32,6 +32,7 @@ class DiscoverViewController: UIViewController, DataRequestDelegate {
         navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
     }
     
+    // MARK: - Show other songs after sort button is tapped
     @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {
         let ac = UIAlertController(title: "Genres", message: "", preferredStyle: .alert)
         
