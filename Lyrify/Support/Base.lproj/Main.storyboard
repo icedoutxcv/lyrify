@@ -14,7 +14,7 @@
         <!--Lyrify-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Lyrify" id="BYZ-38-t0r" customClass="SearchViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Lyrify" id="BYZ-38-t0r" customClass="SearchVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,9 +79,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.10980392160000001" green="0.1083046272" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="artist" destination="gzH-VO-BB4" id="iqs-AK-hEb"/>
+                                            <outlet property="firstLabel" destination="gwy-P2-9ih" id="H3f-Z7-OE2"/>
                                             <outlet property="imageSong" destination="lBH-EM-sDk" id="OXI-Zm-DfM"/>
-                                            <outlet property="title" destination="gwy-P2-9ih" id="H3f-Z7-OE2"/>
+                                            <outlet property="secondLabel" destination="gzH-VO-BB4" id="iqs-AK-hEb"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" textLabel="hFV-9y-DNv" rowHeight="80" style="IBUITableViewCellStyleDefault" id="loO-pC-3Hl" customClass="SongTableViewCell" customModule="Lyrify" customModuleProvider="target">
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="887" y="1754"/>
         </scene>
-        <!--Lyrics View Controller-->
+        <!--LyricsVC-->
         <scene sceneID="L8T-4N-jgc">
             <objects>
-                <viewController storyboardIdentifier="LyricsViewController" id="R6v-Dm-T3A" customClass="LyricsViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LyricsViewController" id="R6v-Dm-T3A" customClass="LyricsVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JEP-Un-isq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,7 +319,7 @@
         <!--Discover-->
         <scene sceneID="CWO-Ya-6Jv">
             <objects>
-                <viewController title="Discover" id="75c-l6-970" customClass="DiscoverViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Discover" id="75c-l6-970" customClass="DiscoverVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhN-u4-4qi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,9 +384,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.10980392160000001" green="0.1083046272" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="artist" destination="ORG-I9-Epp" id="iwh-P1-shY"/>
+                                            <outlet property="firstLabel" destination="HBg-eH-dhq" id="qSx-Vj-RRN"/>
                                             <outlet property="imageSong" destination="8U5-pu-2IK" id="RsP-em-Kie"/>
-                                            <outlet property="title" destination="HBg-eH-dhq" id="qSx-Vj-RRN"/>
+                                            <outlet property="secondLabel" destination="ORG-I9-Epp" id="iwh-P1-shY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -444,7 +444,7 @@
         <!--Liked-->
         <scene sceneID="L5G-jm-Ksv">
             <objects>
-                <viewController title="Liked" id="YK9-Le-6ju" customClass="LikedViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Liked" id="YK9-Le-6ju" customClass="LikedVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZB5-uA-Shy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,9 +509,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.10980392160000001" green="0.1083046272" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="artist" destination="apv-Sk-sAu" id="oEL-u9-S44"/>
+                                            <outlet property="firstLabel" destination="T9E-ew-BAF" id="USO-bc-8NF"/>
                                             <outlet property="imageSong" destination="OBe-rk-Zv9" id="CTd-qJ-U9t"/>
-                                            <outlet property="title" destination="T9E-ew-BAF" id="USO-bc-8NF"/>
+                                            <outlet property="secondLabel" destination="apv-Sk-sAu" id="oEL-u9-S44"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -561,10 +561,10 @@
             </objects>
             <point key="canvasLocation" x="887" y="205"/>
         </scene>
-        <!--Album View Controller-->
+        <!--AlbumVC-->
         <scene sceneID="ifg-ol-tBM">
             <objects>
-                <viewController storyboardIdentifier="AlbumViewController" id="wku-JG-qTn" customClass="AlbumViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlbumViewController" id="wku-JG-qTn" customClass="AlbumVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q9A-IS-NZW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,14 +583,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPg-wZ-zfn">
-                                                <rect key="frame" x="0.0" y="220" width="414" height="20"/>
+                                                <rect key="frame" x="0.0" y="220" width="414" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" systemColor="systemIndigoColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="wPg-wZ-zfn" secondAttribute="bottom" constant="20" id="1Te-QP-LDD"/>
+                                            <constraint firstAttribute="bottom" secondItem="wPg-wZ-zfn" secondAttribute="bottom" constant="15" id="1Te-QP-LDD"/>
                                             <constraint firstAttribute="trailing" secondItem="wPg-wZ-zfn" secondAttribute="trailing" id="BCr-WT-hD4"/>
                                             <constraint firstItem="wPg-wZ-zfn" firstAttribute="leading" secondItem="M0f-q0-LQF" secondAttribute="leading" id="j4r-M5-1mH"/>
                                             <constraint firstItem="wPg-wZ-zfn" firstAttribute="top" secondItem="rTY-rV-KF2" secondAttribute="bottom" constant="20" id="lm9-Jy-gWP"/>
@@ -667,7 +666,7 @@
         <!--Artist name-->
         <scene sceneID="pgG-lj-gld">
             <objects>
-                <viewController storyboardIdentifier="ArtistViewController" id="Uwq-eH-ryV" customClass="ArtistViewController" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArtistViewController" id="Uwq-eH-ryV" customClass="ArtistVC" customModule="Lyrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDG-wh-scn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

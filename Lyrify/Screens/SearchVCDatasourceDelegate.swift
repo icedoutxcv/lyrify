@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 // MARK: - UITableView dataSource
-extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if  searchController.isActive && !responseData.isEmpty() {
+        if searchController.isActive && !allData.isEmpty() {
             switch section {
-            case 0: return responseData.tracks.count
-            case 1: return responseData.albums.count
-            case 2: return responseData.artists.count
+            case 0: return allData.tracks.count
+            case 1: return allData.albums.count
+            case 2: return allData.artists.count
             default: return 0
             }
         }
@@ -24,9 +24,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        if searchController.isActive && !responseData.isEmpty() {
+        if searchController.isActive && !allData.isEmpty() {
             return 3
-        } else if !searchController.isActive && responseData.isEmpty() {
+        } else if !searchController.isActive && allData.isEmpty() {
             return 1
         }
         return 1
@@ -38,19 +38,19 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         let basicCell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
         
         if (searchController.isActive) {
-            if indexPath.section == 0 && !responseData.tracks.isEmpty {
-                cell.configure(track: responseData.tracks[indexPath.row])
-                loadImage(cell: cell, indexPath: indexPath, imagePath: responseData.tracks[indexPath.row].imageURL)
+            if indexPath.section == 0 && !allData.tracks.isEmpty {
+                cell.configure(track: allData.tracks[indexPath.row])
+                loadImage(cell: cell, indexPath: indexPath, imagePath: allData.tracks[indexPath.row].imageURL)
                 return cell
             }
-            else if indexPath.section == 1 && !responseData.albums.isEmpty {
-                cell.configure(track: responseData.tracks[indexPath.row])
-                loadImage(cell: cell, indexPath: indexPath, imagePath: responseData.albums[indexPath.row].imageURL)
+            else if indexPath.section == 1 && !allData.albums.isEmpty {
+                cell.configure(album: allData.albums[indexPath.row])
+                loadImage(cell: cell, indexPath: indexPath, imagePath: allData.albums[indexPath.row].imageURL)
                 return cell
             }
-            else if indexPath.section == 2 && !responseData.artists.isEmpty {
-                cell.configure(track: responseData.tracks[indexPath.row])
-                loadImage(cell: cell, indexPath: indexPath, imagePath: responseData.artists[indexPath.row].imageURL)
+            else if indexPath.section == 2 && !allData.artists.isEmpty {
+                cell.configure(artist: allData.artists[indexPath.row])
+                loadImage(cell: cell, indexPath: indexPath, imagePath: allData.artists[indexPath.row].imageURL)
                 return cell
             }
         }
@@ -70,7 +70,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch section {
             case 0:
-                if searchController.isActive && !responseData.isEmpty() {
+                if searchController.isActive && !allData.isEmpty() {
                     label.text = Labels.tracks
                 } else {
                     label.text = Labels.recentSearches
@@ -115,13 +115,10 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
- 
-    
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            if !responseData.isEmpty() {
-                presentLyricsVC(with: self.responseData.tracks[indexPath.row])
+            if !allData.isEmpty() {
+                Helper.presentLyricsVC(track: self.allData.tracks[indexPath.row], navigationController: navigationController!, imageLoader: imageLoader)
             } else {
                 let recentItem = History.recentHistory[indexPath.row]
                 guard searchBar != nil else { return }
@@ -131,10 +128,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
                 updateSearchResults(for: searchController)
             }
         } else if indexPath.section == 1 {
-            presentAlbumVC(with: self.responseData.albums[indexPath.row])
+            Helper.presentAlbumVC(albumID: self.allData.albums[indexPath.row].id, albumImage: UIImage(), albumName: self.allData.albums[indexPath.row].name,parentVC: self, imageLoader: imageLoader )
            
         } else if indexPath.section == 2{
-            presentArtistVC(with: self.responseData.albums[indexPath.row].artist)
+            let selectedArtist = self.allData.albums[indexPath.row]
+           
+            let artist = Artist(name: selectedArtist.artist , id: selectedArtist.artistID, albums: [], imageURL: selectedArtist.imageURL)
+            
+            Helper.presentArtistVC(artist: artist, parentVC: self, imageLoader: imageLoader)
         }
     }
 }

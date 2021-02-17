@@ -205,6 +205,11 @@ extension UIView {
 
 extension UITableView {
 func reloadWithAnimation() {
+    self.alpha = 0
+    UIView.animate(withDuration: 2) {
+        self.alpha = 1
+    }
+    
     self.reloadData()
     let tableViewHeight = self.bounds.size.height
     let cells = self.visibleCells

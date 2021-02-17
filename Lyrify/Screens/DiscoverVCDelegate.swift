@@ -9,24 +9,26 @@
 import Foundation
 import UIKit
 
-extension DiscoverViewController: UITableViewDelegate, UITableViewDataSource {
+extension DiscoverVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return responseData.tracks.count
+        return tracks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath)
             as! SongTableViewCell
         
-        cell.configure(track: responseData.tracks[indexPath.row])
-        loadImage(cell: cell, indexPath: indexPath, imagePath: responseData.tracks[indexPath.row].imageURL)
+        // MARK: Configure and load image for each cell
+        let track = tracks[indexPath.row]
+        cell.configure(track: track)
+        loadImage(cell: cell, indexPath: indexPath, imagePath: tracks[indexPath.row].imageURL)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let track = responseData.tracks[indexPath.row]
-        self.presentLyricsViewController(with: track)
+        
+        let track = tracks[indexPath.row]
+        Helper.presentLyricsVC(track: track, navigationController: navigationController!, imageLoader: imageLoader)
     }
-    
 }

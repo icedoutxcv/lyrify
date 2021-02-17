@@ -10,10 +10,11 @@ import UIKit
 
 class SongTableViewCell: UITableViewCell {
     @IBOutlet weak var imageSong: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var artist: UILabel!
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
     
     func setupUI() {
+        guard let imageSong = imageSong else { return }
         imageSong.layer.cornerRadius = 5
         imageSong.layer.borderWidth = 1
         imageSong.layer.borderColor = UIColor.clear.cgColor
@@ -21,6 +22,7 @@ class SongTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,7 +30,17 @@ class SongTableViewCell: UITableViewCell {
     }
     
     func configure(track: Track) {
-        self.title.text = track.name
-        self.artist.text = track.artist
+        self.firstLabel.text = track.name
+        self.secondLabel.text = track.artist
+    }
+    
+    func configure(album: Album) {
+        self.firstLabel.text = album.name
+        self.secondLabel.text = "Album"
+    }
+    
+    func configure(artist: Artist) {
+        self.firstLabel.text = artist.name
+        self.secondLabel.text = "Artist"
     }
 }
