@@ -1,9 +1,3 @@
-<h1> <img src="https://github.com/icedoutxcv/Lyrify/blob/master/Lyrify/Assets.xcassets/roundedIcon.imageset/roundedIcon.png"
-  width="48"
-  height="48"
-  style="float:left;">
-Lyrify</h1>
-
 **Lyrify** provides a beatiful interface with animations for quick access to lyrics of the song, you can also see albums created by artist or list of songs that album contains. 
 
 Lyrics are scrapped from genius.com, everything else   i.e. images, album/artist informations are provided by Deezer API.
