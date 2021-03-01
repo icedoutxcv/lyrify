@@ -6,8 +6,6 @@ Lyrics are scrapped from genius.com, everything else   i.e. images, album/artist
 ![](media/preview.gif)
 
 # API
-
-* genius.com
 * deezer.com
 
 ## Disclaimer
